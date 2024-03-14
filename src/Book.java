@@ -10,7 +10,8 @@ public class Book extends Item {
         this.genre = genre;
     }
 
-    void showInfo() {
+    @Override
+    public void showInfo() {
         System.out.println("Name: " + name + "\nDescription: " + getDescription() + "\nID: " + ID + "\nPrice: " + price
             + "\nAuthor: " + author + "\nNumber of pages: " + numberOfPages + "\nGenre: " + genre);
     }
