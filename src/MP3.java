@@ -7,7 +7,8 @@ public class MP3 extends Item {
         this.duration = duration;
     }
 
-    void showInfo() {
+    @Override
+    public void showInfo() {
         System.out.println("Name: " + name + "\nDescription: " + getDescription() + "\nID: " + ID + "\nPrice: " + price + "\nDuration: " + duration);
     }
 }
