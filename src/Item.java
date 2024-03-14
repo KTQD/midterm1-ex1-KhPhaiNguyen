@@ -11,9 +11,7 @@ public abstract class Item {
         this.price = price;
     }
 
-    void showInfo() {
-        System.out.println("Name: " + name + "\nDescription: " + description + "\nID: " + ID + "\nPrice: " + price);
-    }
+    public abstract void showInfo();
 
     public String getDescription() {
         return description;
